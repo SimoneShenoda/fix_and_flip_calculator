@@ -1,56 +1,107 @@
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f1f8e9;
-    color: #2e7d32;
-    text-align: center;
-    padding: 50px;
-}
-
-.calculator {
-    background-color: #a5d6a7;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    color: #388e3c;
-    font-size: 2rem;
-}
-
-.form-group {
-    margin: 15px 0;
-}
-
-input[type="number"] {
-    padding: 10px;
-    width: 250px;
-    border-radius: 5px;
-    border: 1px solid #388e3c;
-    font-size: 1rem;
-}
-
-button {
-    background-color: #66bb6a;
-    color: white;
-    padding: 15px 25px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f3; /* Light background for the page */
+    color: #2f2f2f; /* Dark text for contrast */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full-screen height */
+  }
+  
+  /* Calculator Container */
+  .calculator-container {
+    background-color: #ffffff; /* White background for the calculator */
+    padding: 30px;
+    max-width: 500px; /* Fixed width */
+    width: 90%; /* Flexible width for smaller screens */
+    margin: 20px auto; /* Space around the container */
     border-radius: 10px;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #43a047;
-}
-
-.results p {
-    font-size: 1.2rem;
-    margin-top: 20px;
-    color: #2e7d32;
-}
-
-.results span {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    text-align: center; /* Center all text inside the container */
+  }
+  
+  /* Title */
+  .calculator-title {
+    font-size: 1.8rem;
     font-weight: bold;
-    font-size: 1.4rem;
-    color: #388e3c;
-}
+    color: #4CAF50; /* Avocado green */
+    margin-bottom: 20px;
+  }
+  
+  /* Input Group */
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left; /* Align labels and inputs to the left */
+  }
+  
+  .input-group label {
+    font-size: 1rem;
+    color: #2f2f2f; /* Dark text for labels */
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #5a9c56; /* Avocado green border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Light input background */
+    color: #2f2f2f; /* Dark text for inputs */
+  }
+  
+  .input-group input::placeholder {
+    color: #a0a0a0; /* Light gray for placeholder text */
+  }
+  
+  /* Button */
+  button {
+    background-color: #4CAF50; /* Avocado green button */
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+  }
+  
+  /* Results */
+  #result {
+    margin-top: 20px;
+    text-align: center;
+    color: #2f2f2f; /* Dark text for results */
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #5a9c56; /* Avocado green */
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
