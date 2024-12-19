@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,3 +52,53 @@
   <script src="script.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix and Flip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Fix and Flip Calculator</h1>
+        <div class="form-group">
+            <label for="arv">ARV (After Repair Value):</label>
+            <input type="number" id="arv" placeholder="Enter ARV">
+        </div>
+        <div class="form-group">
+            <label for="purchasePrice">Purchase Price:</label>
+            <input type="number" id="purchasePrice" placeholder="Enter Purchase Price">
+        </div>
+        <div class="form-group">
+            <label for="rehabBudget">Rehab Budget:</label>
+            <input type="number" id="rehabBudget" placeholder="Enter Rehab Budget">
+        </div>
+        <div class="form-group">
+            <label for="holdingCosts">Holding Costs:</label>
+            <input type="number" id="holdingCosts" placeholder="Enter Holding Costs">
+        </div>
+        <div class="form-group">
+            <label for="loanInterestRate">Loan Interest Rate (%):</label>
+            <input type="number" id="loanInterestRate" placeholder="Enter Loan Interest Rate">
+        </div>
+        <div class="form-group">
+            <label for="otherCosts">Other Costs:</label>
+            <input type="number" id="otherCosts" placeholder="Enter Other Costs">
+        </div>
+
+        <button onclick="calculate()">Calculate</button>
+
+        <div class="results">
+            <p><strong>Total Project Costs: </strong><span id="totalCost"></span></p>
+            <p><strong>Profit: </strong><span id="profit"></span></p>
+            <p><strong>Cash-on-Cash Return: </strong><span id="cashReturn"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> 56a090ad9680efa6bbe64f28eed5728e98689419
